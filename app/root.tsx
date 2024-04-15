@@ -112,7 +112,7 @@ export default function App() {
             />
           </a>
         </HStack> */}
-        {/* <Box
+        <Box
           backgroundImage={
             "url(https://media.mehrnews.com/d/2022/07/31/4/4230759.jpg?ts=1659275996951)"
           }
@@ -124,7 +124,7 @@ export default function App() {
           backgroundPosition={"center"}
           pos={"fixed"}
           filter={"blur(3px)"}
-        ></Box> */}
+        ></Box>
         <Outlet />
       </ChakraProvider>
     </Document>
