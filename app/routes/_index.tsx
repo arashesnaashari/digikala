@@ -74,7 +74,7 @@ export default function App() {
 
   const handleSearch = (s: string) => {
     if (typeof window !== "undefined" && window !== null) {
-      window.open(`https://www.digikala.com/search/?q=${s}`, "_blank");
+      window.open(`https://www.digikala.com/search/?q=${s}`, "_blank")?.focus();
       // window.open(`https://www.digikala.com/search/?q=${s}`, "_blank").focus();
     }
   };
