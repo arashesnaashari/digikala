@@ -116,6 +116,15 @@ export default function App() {
 
           if (d.asr_text.length > 1 && openmodal) {
             handleSearch(d.asr_text);
+            if (typeof window !== "undefined" && window !== null) {
+              window
+                .open(
+                  `https://www.digikala.com/search/?q=${d.search_optimized}`,
+                  "_blank"
+                )
+                ?.focus();
+              // window.open(`https://www.digikala.com/search/?q=${s}`, "_blank").focus();
+            }
           }
           setopenmodal(false);
 
