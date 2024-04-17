@@ -114,8 +114,8 @@ export default function App() {
           setLoading(false);
           // console.log(openmodal);
 
-          if (d.search_optimized.length > 1 && openmodal) {
-            handleSearch(d.search_optimized);
+          if (d.asr_text.length > 1 && openmodal) {
+            handleSearch(d.asr_text);
           }
           setopenmodal(false);
 
